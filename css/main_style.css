@@ -6,10 +6,38 @@ colorblind safe color palette from colorbrewer2/org. Used Hue
 */
 
 body {
-  background-color: #e0ecf4
-  color: #9ebcda
+  background-color: #e0ecf4;
+  color: #9ebcda;
   text-align: center;
+  margin: 0;
 }
 h1 {
-  color: #8856a7
+  color: #8856a7;
+  padding: 5px;
+  margin: 0;
+}
+#body-container {
+  background-color: #e0ecf4;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100vh;
+  border: 2px solid #f7f7f7;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#header {
+  background-color: #0571b0;
+}
+#profile-picture {
+  float: left;
+}
+#welcome-text {
+  padding-top: 25px;
+  font-size: 25px;
+}
+#research-interests {
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+  left: 50px;
 }

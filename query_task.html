@@ -115,6 +115,7 @@
   var popUrl = "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/CaliforniaCities/FeatureServer/0";
   var popupTemplate = {
     title: "{City}",
+    content: "<b>Population:" + "</b> {Population} " + "<br><b>Households:</b> {Household}" + "<br><b>Latitude:</b> {Latitude}" + "<br><b>Longitude:</b> {Longitude}"
     fieldInfos:[
       {
         fieldName: "Population",
@@ -133,8 +134,6 @@
         }
       }
     ],
-    content: "<b>Population:" + "</b> {Population} " + "<br><b>Households:</b> {Household}" + "<br><b>Latitude:</b>
-  {Latitude}" + "<br><b>Longitude:</b> {Longitude}"
   };
   var resultsLayer = new GraphicsLayer();
   var qTask = new QueryTask({ url: popUrl });
